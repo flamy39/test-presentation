@@ -4,28 +4,74 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Sécuriser API Rest</title>
+    <style>
+      .reveal .slides section {
+        text-align: justify; /* aligne le texte à gauche */
+      }
+      .reveal .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.5); /* semi-transparent */
+        color: white;
+        font-size: 20px;
+      }
+      .reveal .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.5); /* semi-transparent */
+        color: white;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
   <div class="reveal">
+    <div class="header">
+      Sécuriser une API REST avec Symfony
+    </div>
     <div class="slides">
       <section>
-        <h1>Titre 1</h1>
+        <h2>Sécuriser une API Rest</h2>
+          <br>
         <ul>
-            <li>Item 1 : les <strong>tableaux</strong></li>
-            <li>Item 2</li>
+            <li>Authentification (Authentication)</li>
+            <li>Autorisation (Authorization)</li>
         </ul>
       </section>
-      <section>Slide 2</section>
       <section>
-		 <pre>
-		     <code data-trim data-noescape>
-					 // Some highlighted code
-					 $var = 10;
-					 echo "$var helloworld";
-			</code>
-		 </pre>
+        <h2>Authentification</h2>
+        <ul>
+          <li>C'est le processus de <b>vérification de l'identité</b> d'un utilisateur ou d'un système qui tente d'accéder à votre API</li>
+          <li>C'est comme demander à quelqu'un de prouver qui il est avant de lui permettre d'entrer dans un bâtiment sécurisé</li>
+        </ul>
       </section>
+      <section>
+        <h2>Autorisation</h2>
+        <ul>
+          <li>Une fois l'identité vérifiée, l'autorisation détermine ce que l'utilisateur authentifié est <b>autorisé à faire</b></li>
+          <li>C'est comme donner à quelqu'un un badge d'accès spécifique qui définit dans quels bureaux ou étages il peut entrer.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Symfony Security</h2>
+        <p>Le composant <b>Security</b> de Symfony fournit des fonctionnalités de sécurité pour votre application (Web, API Rest)</p>
+        <ul>
+          <li>Authentification</li>
+          <li>Autorisation</li>
+        </ul>
+        <blockquote>
+          <p>Fichier : security.yaml</p>
+      </section>
+    </div>
+    <div class="footer">
+      © 2023 Franck LAMY- Tous droits réservés - BTS SIO Lycée Pergaud.
     </div>
   </div>
     <script type="module" src="/main.js"></script>
